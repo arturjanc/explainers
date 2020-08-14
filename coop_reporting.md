@@ -67,7 +67,7 @@ of other documents. In addition to stripping URLs of usernames and passwords as
 normally done in reporting, we have to consider which URLs we can safely use in reports.
 
 - **Navigation to a COOP reponse:** here we want to identify the document that navigated to a response with COOP reporting. What we can safely report is the following:
-	- If the COOP response with the current document or the previous response (when there are redirects), we can report the current document URL or the previous response URL respectively(sanitized).
+	- If the COOP response is same-origin with the current document or the previous response (when there are redirects), we can report the current document URL or the previous response URL respectively(sanitized).
 	- We can always report the referrer of the navigation.
 - **Navigation away from a COOP page:** here we want to identify the reponse the page with COOP reporting is navigating to. What we can safely report is the following:
 	- If the response is same-origin with the current document or the last response (when there are redirects), we can report the response URL(sanitized).
